@@ -1,0 +1,8 @@
+yolo11l.pt
+finevideo/
+*.jsonl
+!results.jsonl.gz
+__pycache__/
+.venv/
+*.pyc
+.env
