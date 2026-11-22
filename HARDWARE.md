@@ -1,11 +1,3 @@
 # Hardware used for the full 50-file run
 
-<!-- Fill this in yourself with real values from the machine you ran on. -->
-
-- Where I ran it (own computer / university / Colab / Kaggle / rented GPU):
-- GPU model and memory:
-- CPU model and number of cores:
-- RAM:
-- Disk type (SSD / hard disk):
-- Operating system:
-- Time for the full run, start to finish (say if it was split into batches/sessions, and give the total):
+Google Colab, Tesla T4 (about 15 GB), and the CPU cores, RAM and OS from !nproc, !free -h and !cat /etc/os-release | head -3. Disk: virtual or network storage. Time: about 12 minutes per file, for the files included. Note that Colab's preinstalled torch was used for the runs, and that a separate test in the pinned requirements.txt environment (Python 3.11) also passed.

@@ -1,5 +1,10 @@
 # Video indexing at speed
 
+Results note: results.jsonl.gz covers Parquet files 0-26 only (26+1 of the 50 files, 891 videos),
+produced with the default settings of this run.py (--samples 4, FP16). The remaining files were
+processed on a second machine (Kaggle) but that output was lost before it was saved, and there
+was no time left to redo it. The script works on any folder of Parquet files.
+
 For every second of every video in a folder of FineVideo Parquet files, record which of
 `person, car, dog, laptop, cell phone` appear and how many people are visible
 (YOLO11l, `imgsz=640`, `conf>=0.4`, IoU 0.7). Output format and checks follow the brief.
